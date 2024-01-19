@@ -80,7 +80,11 @@ class PostController extends Controller
     public function destroy(string $id)
     {
         $post = Post::find($id);
+
+        $this->authorize('delete', $post);
+
         $post->delete();
+
         return redirect()->route('posts.index')
             ->with('success', 'Posto Removido com Sucesso!');
     }

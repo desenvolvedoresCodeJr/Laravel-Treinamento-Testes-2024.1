@@ -10,11 +10,11 @@
                     @csrf
                     <div class="form-group mt-3">
                         <label for="title">Título</label>
-                        <input type="text" class="form-control" id="title" name="title" required>
+                        <input type="text" class="form-control" id="title" name="title">
                     </div>
                     <div class="form-group mt-3">
                         <label for="content">Conteúdo</label>
-                        <textarea class="form-control" id="content" name="content" rows="3" required></textarea>
+                        <textarea class="form-control" id="content" name="content" rows="3"></textarea>
                     </div>
                     <br>
                     <button type="submit" class="btn btn-primary">Criar Post</button>
